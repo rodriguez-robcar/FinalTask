@@ -1,0 +1,8 @@
+<RunSettings>
+  <MSTest>
+    <Parallelize>
+      <Workers>4</Workers> <!-- Number of threads -->
+      <Scope>ClassLevel</Scope> <!-- Parallel execution at class level -->
+    </Parallelize>
+  </MSTest>
+</RunSettings>
