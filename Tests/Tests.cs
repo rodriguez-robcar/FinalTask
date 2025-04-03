@@ -2,9 +2,10 @@
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
-namespace Final_Task.PageObject
+namespace Final_Task.Tests
 {
     using Final_Task.PageObject.Pages;
+    using Final_Task.Utils;
     using FluentAssertions;
     using NLog;
     using OpenQA.Selenium;
@@ -43,7 +44,7 @@ namespace Final_Task.PageObject
         [TestInitialize]
         public void Initialize()
         {
-            this.Instance = WebDriverSingleton.GetInstance("Chrome");
+            this.Instance = WebDriverSingleton.GetInstance("chrome");
             this.Driver = this.Instance.GetDriver();
             this.LoginPage = new LoginPage(this.Driver);
             Logger.Info("Tests started.");

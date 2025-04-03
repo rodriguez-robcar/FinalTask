@@ -2,7 +2,7 @@
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
-namespace Final_Task.PageObject
+namespace Final_Task.Utils
 {
     using OpenQA.Selenium;
     using OpenQA.Selenium.Chrome;
@@ -22,9 +22,11 @@ namespace Final_Task.PageObject
             switch (value)
             {
                 case "Chrome":
+                case "chrome":
                     this.driver = new ChromeDriver(WebDriverOptions.GetChromeOptions());
                     break;
                 case "Edge":
+                case "edge":
                     this.driver = new EdgeDriver(WebDriverOptions.GetEdgeOptions());
                     break;
                 default:
